@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * Class ${1}
+ * 
+ * @package ${2}
+ *
+ * @property ${3}
+ * 
+ * @method
+ */
+]]></content>
+    <tabTrigger>/,</tabTrigger>
+    <scope>source.php</scope>
+    <description>Class Comment</description>
+</snippet>
