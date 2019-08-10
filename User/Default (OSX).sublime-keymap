@@ -420,8 +420,9 @@
 
 
     // Goto
-    { "keys" : ["alt+super+["], "command" : "jump_back" },
-    { "keys" : ["alt+super+]"], "command" : "jump_forward" },
+    { "keys" : ["alt+super+left"], "command" : "jump_back" },
+    { "keys" : ["alt+super+right"], "command" : "jump_forward" },
+    { "keys" : ["alt+super+down"], "command" : "goto_definition" },
     // { "keys" : ["super+shift+["], "command" : "prev_window" },
     // { "keys" : ["super+shift+]"], "command" : "next_tab" },
     { "keys" : ["ctrl+1"], "command" : "show_overlay", "args" : {"overlay" : "goto", "show_files" : true} },
