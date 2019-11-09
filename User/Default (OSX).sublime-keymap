@@ -175,8 +175,10 @@
         // for filco keyboard
         { "keys" : ["ctrl+alt+left"], "command" : "move_to", "args" : { "to" : "bof", "extend" : false } },
         { "keys" : ["ctrl+super+left"], "command" : "move_to", "args" : { "to" : "bof", "extend" : false } },
+        { "keys" : ["ctrl+alt+super+left"], "command" : "move_to", "args" : { "to" : "bof", "extend" : false } },
         { "keys" : ["ctrl+alt+right"], "command" : "move_to", "args" : { "to" : "eof", "extend" : false } },
         { "keys" : ["ctrl+super+right"], "command" : "move_to", "args" : { "to" : "eof", "extend" : false } },
+        { "keys" : ["ctrl+alt+super+right"], "command" : "move_to", "args" : { "to" : "eof", "extend" : false } },
     
     { "keys" : ["shift+ctrl+home"], "command" : "move_to", "args" : {"to" : "bof", "extend" : true} },
     { "keys" : ["shift+alt+home"], "command" : "move_to", "args" : {"to" : "bof", "extend" : true} },
@@ -206,8 +208,8 @@
         { "keys" : ["shift+alt+down"], "command" : "move", "args" : {"by" : "pages", "forward" : true, "extend" : true} },
         { "keys" : ["shift+super+down"], "command" : "move", "args" : {"by" : "pages", "forward" : true, "extend" : true} },
     
-    { "keys" : ["alt+super+left"], "command" : "scroll_width", "args" : {"amount" : -80 } },
-    { "keys" : ["alt+super+right"], "command" : "scroll_width", "args" : {"amount" : 80 } },
+    // { "keys" : ["alt+super+left"], "command" : "scroll_width", "args" : {"amount" : -80 } },
+    // { "keys" : ["alt+super+right"], "command" : "scroll_width", "args" : {"amount" : 80 } },
 
     { "keys" : ["shift+ctrl+up"], "command" : "select_lines", "args" : { "forward" : false } },
     { "keys" : ["ctrl+alt+super+up"], "command" : "select_lines", "args" : { "forward" : false } },
