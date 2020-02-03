@@ -440,6 +440,11 @@
     { "keys" : ["alt+4"], "command" : "show_overlay", "args" : {"overlay" : "goto", "text" : "#"} },
     { "keys" : ["super+4"], "command" : "show_overlay", "args" : {"overlay" : "goto", "text" : "#"} },
 
+    { "keys" : ["super+f6"], "command" : "toggle_setting", "args": {"setting" : "spell_check"} },
+    { "keys" : ["ctrl+f6"], "command" : "toggle_setting", "args": {"setting" : "spell_check"} },
+    { "keys" : ["f6"], "command" : "next_misspelling" },
+    { "keys" : ["shift+f6"], "command" : "prev_misspelling" },
+
 
     // Tools
     { "keys" : ["shift+ctrl+p"], "command" : "show_overlay", "args" : {"overlay" : "command_palette"} },
