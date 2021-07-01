@@ -1,4 +1,0 @@
-[
-    { "keys": ["super+shift+["], "command": "goto_window" },
-    { "keys": ["super+shift+]"], "command": "goto_window" }
-]
