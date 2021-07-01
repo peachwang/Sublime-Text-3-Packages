@@ -1,19 +1,32 @@
 {
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": false,
 	"auto_complete_cycle": true,
+	"show_definitions": true,
+	"tab_completion": false,
+	"shift_tab_unindent": false,
+	"translate_tabs_to_spaces": true,
+	"draw_white_space": "all",
+	"word_wrap": true,
+
+	"font_face": "Monaco",
+	"font_size": 18,
+	"theme": "Adaptive.sublime-theme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
 	"bold_folder_labels": true,
-	"default_line_ending": "unix",
-	"dictionary": "Packages/Language - English/en_US.dic",
 	"dpi_scale": 1.0,
 	"draw_centered": false,
-	"draw_white_space": "all",
+	
+	"show_line_endings": false,
+	"default_line_ending": "unix",
+	"spell_check": true,
+	"dictionary": "Packages/Language - English/en_US.dic",
 	"folder_exclude_patterns":
 	[
 		"__pycache__"
 	],
-	"font_face": "Monaco",
-	"font_size": 18,
-	"highlight_line": true,
-	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"ActionScript",
@@ -62,17 +75,10 @@
 		"Textile",
 		"Vintage",
 		"XML",
-		"YAML"
+		"YAML",
 	],
 	"indent_guide_options":
 	[
 		"draw_normal"
-	],
-	"show_definitions": true,
-	"show_line_endings": false,
-	"spell_check": true,
-	"tab_completion": false,
-	"theme": "Default.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"word_wrap": true
+	]
 }
