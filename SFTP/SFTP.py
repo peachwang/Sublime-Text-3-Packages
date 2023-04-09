@@ -14,6 +14,15 @@ if int(sublime.version()) > 3000:
     st_version = 3
 
 
+version = '2.0.0'
+package_name = os.path.basename(os.path.abspath(os.path.dirname(__file__)))
+if package_name != 'SFTP' and os.path.exists(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'SFTP')):
+    installation_error = 'The SFTP and ' + package_name + ' packages can not be installed at the same time. ' + \
+        'Please uninstall ' + package_name + ' (or SFTP).'
+    sublime.error_message('SFTP\n\n' + installation_error)
+    raise RuntimeError(installation_error)
+
+
 reloading = {
     'happening': False,
     'shown': False
@@ -21,7 +30,7 @@ reloading = {
 
 reload_mods = []
 for mod in sys.modules:
-    if (mod[0:9] == 'SFTP.sftp' or mod[0:5] == 'sftp.' or mod == 'sftp') and sys.modules[mod] is not None:
+    if (mod[0:len(package_name) + 5] == package_name + '.sftp' or mod[0:5] == 'sftp.' or mod == 'sftp') and sys.modules[mod] is not None:
         reload_mods.append(mod)
         reloading['happening'] = True
 
@@ -84,7 +93,7 @@ mods_load_order = [
 
 mod_load_prefix = ''
 if st_version == 3:
-    mod_load_prefix = 'SFTP.'
+    mod_load_prefix = package_name + '.'
     from imp import reload
 
 for mod in mods_load_order:

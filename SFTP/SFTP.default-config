@@ -35,11 +35,12 @@
     ${27://}"ftp_passive_mode": ${28:true},
     ${29://}"ftp_obey_passive_host": ${30:false},
     ${31://}"ssh_key_file": "${32:~/.ssh/id_rsa}",
-    ${33://}"sftp_flags": [${34:"-F", "/path/to/ssh_config"}],
+    ${33://}"sftp_sudo": ${34:false},
+    ${35://}"sftp_flags": [${36:"-F", "/path/to/ssh_config"}],
     
-    ${35://}"preserve_modification_times": ${36:false},
-    ${37://}"remote_time_offset_in_hours": ${38:0},
-    ${39://}"remote_encoding": "${40:utf-8}",
-    ${41://}"remote_locale": "${42:C}",
-    ${43://}"allow_config_upload": ${44:false},
+    ${37://}"preserve_modification_times": ${38:false},
+    ${39://}"remote_time_offset_in_hours": ${40:0},
+    ${41://}"remote_encoding": "${42:utf-8}",
+    ${43://}"remote_locale": "${44:C}",
+    ${45://}"allow_config_upload": ${46:false},
 }
